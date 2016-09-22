@@ -22,7 +22,7 @@ class Words {
 //: ### variables the same type? If not, why?
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: No they might not be of the same type because the values passed in could be nil while the the instance variables have to have a value.
 
 
 //: ## Q2: Variable Types and Function Types
@@ -41,14 +41,14 @@ class Words {
 //: ### change) the code at the very bottom. Debug the function.
 
 
-//: [EXPLAIN YOUR ANSWER HERE]
+//: 
 
 
 //: ## Q3: More Functions and Object Initialization
     class func isAnagram() -> Bool {
         var countLetters : [Character : Int] //Line X
-        var lenA = self.wordA.characters.count
-        var lenB = self.wordB.characters.count
+        var lenA = wordA.characters.count
+        var lenB = wordB.characters.count
         
         if lenA != lenB {
             return false
